@@ -1,4 +1,6 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+  Enter some text:
 </p>
+<input #input type="text" (keyup)="onKeyPress(input.value)" >
+<p>{{keysExpression}}</p>

@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  public keysExpression : string = "";
+
+  onKeyPress(value:string){
+    if(!value){
+      return;
+    }
+    this.keysExpression += value + "-";
+  }
+
 }
